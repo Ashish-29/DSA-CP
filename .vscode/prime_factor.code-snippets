@@ -1,0 +1,23 @@
+{
+	"prime factorization of n": {
+		"prefix": "prime_factor ",
+		"body": [
+		  "vector<pair<ll,int>> prime_factor (ll n) {",
+		  "    vector<pair<ll,int>> factorization;",
+		  "    for (ll d = 2; d * d <= n; d++) {",
+		  "        int ct=0;",
+		  "        while (n % d == 0) {",
+		  "            ct++;",
+		  "            n /= d;",
+		  "        }",
+		  "        if(ct!=0) factorization.push_back({d,ct});",
+		  "    }",
+		  "    if (n > 1) factorization.push_back({n,1});",
+		  "    return factorization;",
+		  "}",
+		  "",
+		  ""
+		],
+		"description": "prime factorization of n"
+	  }
+}

@@ -1,0 +1,24 @@
+{
+	"Smallest prime factor": {
+		"prefix": "spf",
+		"body": [
+		  "const int N=1000000;",
+		  "vi spf(N+1,0);",
+		  "",
+		  "void sieve(){",
+		  "    spf[1] = 1;",
+		  "    for (int i = 2; i<= N; i++) {",
+		  "        if (spf[i] ==0) {",
+		  "            spf[i]=i;",
+		  "            for (int j = i * i; j <= N; j += i){",
+		  "                spf[j] = i;",
+		  "            }",
+		  "        }",
+		  "    }",
+		  "}",
+		  "",
+		  ""
+		],
+		"description": "Smallest prime factor"
+	  }
+}

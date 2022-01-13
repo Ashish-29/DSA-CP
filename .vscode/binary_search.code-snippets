@@ -1,0 +1,22 @@
+{
+    "o(logn)": {
+        "prefix": "binary_search",
+        "body": [
+          "ll bs(ll st,ll en,ll val){",
+          "    ll mid,ans;",
+          "",
+          "    while(st<=en){",
+          "        mid=(st+en)/2;",
+          "",
+          "        if(mid==val) {ans=mid;break;}",
+          "        else if(mid<val) st=mid+1;",
+          "        else en=mid-1;",
+          "    }",
+          "",
+          "    return ans;",
+          "}",
+          ""
+        ],
+        "description": "o(logn)"
+    }
+}

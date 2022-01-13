@@ -1,0 +1,21 @@
+{
+    "o(logn)": {
+        "prefix": "lower_bound",
+        "body": [
+          "ll lb(ll st,ll en,ll val){",
+          "    ll mid,ans=st;",
+          "",
+          "    while(st<=en){",
+          "        mid=(st+en)/2;",
+          "",
+          "        if(val>=mid) {ans=mid;st=mid+1;}",
+          "        else en=mid-1;",
+          "    }",
+          "",
+          "    return ans;",
+          "}",
+          ""
+        ],
+        "description": "o(logn)"
+    }
+}

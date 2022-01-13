@@ -1,0 +1,29 @@
+{
+    "Graph/tree": {
+        "prefix": "bfs",
+        "body": [
+          "vi vis(N,0);",
+          "",
+          "void bfs(ll n){",
+          "    queue<ll> q;",
+          "    q.push(n); ",
+          "    vis[n]=1;",
+          "",
+          "    while(!q.empty()){",
+          "        ll node=q.front();",
+          "        q.pop();",
+          "        for (auto it: adj[node]) {",
+          "            if (!vis[it]){",
+          "                q.push(it);",
+          "                vis[it]=1;",
+          "            }",
+          "        }",
+          "    }",
+          "}",
+          "",
+          "// f(i,1,n+1) if(!vis[i]) bfs(i);",
+          ""
+        ],
+        "description": "Graph/tree"
+    }
+}

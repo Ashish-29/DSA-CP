@@ -1,0 +1,19 @@
+{
+	"dfs on tree/graph": {
+		"prefix": "dfs",
+		"body": [
+		  "vi vis(N,0);",
+		  "",
+		  "void dfs(ll n,ll p){",
+		  "    vis[n]=1;",
+		  "",
+		  "    for (auto it:adj[n]){",
+		  "        if (!vis[it]){",
+		  "            dfs(it,n);",
+		  "        }",
+		  "    }",
+		  "}"
+		],
+		"description": "dfs on tree/graph"
+	  }
+}

@@ -1,0 +1,17 @@
+{
+	"fac[n]=n!": {
+		"prefix": "factorial",
+		"body": [
+		  "const int N=1e6+5;",
+		  "vi fac(N);",
+		  "",
+		  "void factorial(){",
+		  "    fac[0]=fac[1]=1;",
+		  "    for (ll i = 2; i <= N; i++) {",
+		  "        fac[i]=i*fac[i-1]%M;",
+		  "    }",
+		  "}"
+		],
+		"description": "fac[n]=n!"
+	  }
+}

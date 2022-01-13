@@ -1,0 +1,18 @@
+{
+    "graph of n nodes and m edges": {
+        "prefix": "ingraph",
+        "body": [
+          "// vi adj[N];",
+          "",
+          "ll n,m,u,v;",
+          "cin>>n>>m;",
+          "",
+          "f(i,0,m){",
+          "    cin>>u>>v;",
+          "    adj[u].pb(v);",
+          "    adj[v].pb(u);",
+          "}"
+        ],
+        "description": "graph of n nodes and m edges"
+      }
+}

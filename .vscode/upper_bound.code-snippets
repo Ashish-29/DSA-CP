@@ -1,0 +1,21 @@
+{
+  "o(logn)": {
+      "prefix": "upper_bound",
+      "body": [
+        "ll ub(ll st,ll en,ll val){",
+        "    ll mid,ans=en;",
+        "",
+        "    while(st<=en){",
+        "        mid=(st+en)/2;",
+        "",
+        "        if(val<=mid) {ans=mid;en=mid-1;}",
+        "        else st=mid+1;",
+        "    }",
+        "",
+        "    return ans;",
+        "}",
+        ""
+      ],
+      "description": "o(logn)"
+  }
+}

@@ -1,0 +1,33 @@
+{
+    "dfs on 2-D graph/grid": {
+        "prefix": "dfs",
+        "body": [
+          "vvi vis(N,vi(N,0));",
+          "",
+          "// int dx[]={0,0,-1,-1,-1,1,1,1};",
+          "// int dy[]={-1,1,0,-1,1,0,-1,1};",
+          "",
+          "int dx[]={0,0,-1,1};",
+          "int dy[]={-1,1,0,0};",
+          "",
+          "void dfs(int x,int y){",
+          "    vis[x][y]=1;",
+          "",
+          "    f(i,0,4){",
+          "        int nx=x+dx[i];",
+          "        int ny=y+dy[i];",
+          "        if(nx>=0 && nx<n && ny>=0 && ny<m && !vis[nx][ny]){",
+          "            dfs(nx,ny);",
+          "        }",
+          "    }",
+          "}",
+          "",
+          "f(i,0,n){",
+          "    f(j,0,m){",
+          "        if(!vis[i][j]) dfs(i,j);",
+          "    }",
+          "}"
+        ],
+        "description": "dfs on 2-D graph/grid"
+      }
+}

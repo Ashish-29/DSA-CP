@@ -1,0 +1,39 @@
+{
+    "Fenwick_tree (BIT)-Binary Index Tree": {
+        "prefix": "bit",
+        "body": [
+          "vl arr(N);",
+          "vl tree(N);",
+          "",
+          "//LSB of x = (x & -x)",
+          "",
+          "//return sum of arr[1...idx]; //O(log2n)",
+          "ll read(ll idx){     ",
+          "    ll sum = 0;",
+          "    while (idx){",
+          "        sum += tree[idx];",
+          "        idx -= (idx & -idx);",
+          "    }",
+          "    return sum;",
+          "}",
+          "",
+          "//add=newvalue-oldvalue;  //O(log2n)",
+          "void update(ll idx, ll add){  ",
+          "    while (idx <= MaxIdx){",
+          "        tree[idx] += add;     ",
+          "        idx += (idx & -idx);",
+          "    }",
+          "}",
+          "",
+          "    // ll n;",
+          "    // cin>>n;",
+          "",
+          "    // f(i,1,n+1){",
+          "    //     cin>>arr[i];",
+          "    //     update(i,arr[i]);",
+          "    // }",
+          ""
+        ],
+        "description": "Fenwick_tree (BIT)-Binary Index Tree"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "tree of n nodes": {
+        "prefix": "intree",
+        "body": [
+          "// vi adj[N];",
+          "",
+          "ll n,u,v;",
+          "cin>>n;",
+          "",
+          "f(i,1,n){",
+          "    cin>>u>>v;",
+          "    adj[u].pb(v);",
+          "    adj[v].pb(u);",
+          "}"
+        ],
+        "description": "tree of n nodes"
+    }
+}
