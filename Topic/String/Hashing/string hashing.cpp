@@ -70,18 +70,6 @@ ll compute_hash(string s){
  
     return hash_value;
 }
- 
-ll substring_hash(ll i,ll j){
-    ll hash_value=0;
-    
-    if(i>0) hash_value=(hashh[j]-hashh[i-1]+M)%M;
-    else    hash_value=hashh[j];
- 
-    ll mod_inv_p=power(p_pow[i],M-2);
-    hash_value=(hash_value*mod_inv_p)%M;
- 
-    return hash_value;
-}
 
 //*****************************************************************************
 int main(){
@@ -89,7 +77,7 @@ int main(){
 
     string s;
     cin>>s;
-    ll ans=hash(s);
+    ll ans=compute_hash(s);
     cout<<ans<<endl;
 
     return 0;
