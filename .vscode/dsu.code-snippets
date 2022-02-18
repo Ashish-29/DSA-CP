@@ -4,7 +4,7 @@
 		"body": [
           "",
 		  "const int N=1e6+5;",
-		  "vi parent(N),rank(N);",
+		  "vi parent(N),rnk(N);",
 		  "//f(i,0,N) parent[i]=i;",
 		  "",
 		  "int find_set(int v) {",
@@ -16,9 +16,9 @@
 		  "    a = find_set(a);",
 		  "    b = find_set(b);",
 		  "    if (a != b) {",
-		  "        if (rank[a] < rank[b]) swap(a, b);",
+		  "        if (rnk[a] < rnk[b]) swap(a, b);",
 		  "        parent[b] = a;",
-		  "        if (rank[a] == rank[b]) rank[a]++;",
+		  "        if (rnk[a] == rnk[b]) rnk[a]++;",
 		  "    }",
 		  "}"
 		],
