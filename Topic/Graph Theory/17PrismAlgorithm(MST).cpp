@@ -20,7 +20,7 @@ vi prism(ll v,vector<pl> adj[]){
     vi weight(v,INT_MAX);
     vector<bool> mst(v,false);
     vi parent(v);
-    priority_queue<pi,vector<pi>,greater<pi>> pq;
+    priority_queue<pi,vector<pi>,greater<pi>> pq;   //{weight,node}
     
     weight[0]=0;
     parent[0]=-1;

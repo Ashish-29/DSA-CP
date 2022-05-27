@@ -32,10 +32,9 @@ int main() {
 
     used.assign(n+1, false);
     for (int i = 1; i <= n; i++) if (!used[i]) dfs1(i);
-
-    used.assign(n+1, false);
     reverse(order.begin(), order.end());
 
+    used.assign(n+1, false);
     for (auto v : order)
     if (!used[v]) {
         dfs2 (v);

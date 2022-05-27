@@ -44,6 +44,7 @@ template<typename Arg,typename... Args>void __dbg(Arg A, Args... B){cerr<<" "<<A
 const double PI=3.1415926535897932;
 const int M=1e9+7;
 const int N=1e6+1;
+const int p=29;
 
 //*****************************************************************************
 

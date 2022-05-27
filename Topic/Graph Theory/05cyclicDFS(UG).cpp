@@ -19,7 +19,9 @@ bool iscycle(ll n,ll prv,vl adj[],vl &vis){
     vis[n]=1;
 
     for (auto it:adj[n]){
-        if (!vis[it] && iscycle(it,n,adj,vis)) return true ;
+        if (!vis[it]){
+            if(iscycle(it,n,adj,vis)) return true ;
+        }
         else if (it!=prv) return true;
     }
     return false;

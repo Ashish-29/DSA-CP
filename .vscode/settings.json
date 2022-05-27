@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "iostream": "cpp",
         "valarray": "cpp",
         "*.tcc": "cpp",
@@ -42,7 +43,8 @@
         "utility": "cpp",
         "typeindex": "cpp",
         "limits": "cpp",
-        "shared_mutex": "cpp"
+        "shared_mutex": "cpp",
+        "cstdlib": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
