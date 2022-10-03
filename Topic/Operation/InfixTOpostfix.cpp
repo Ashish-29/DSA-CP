@@ -49,7 +49,8 @@ string Infix_to_postfix (string s){
 }
 
 int main(){
-    string s="a+b*(c^d-e)^(f+g*h)-i";
+    // string s="a+b*(c^d-e)^(f+g*h)-i";
+    string s="p+q*(r+s)/u+s*t";
     string postfix=Infix_to_postfix(s);
     cout<<"\""<<postfix<<"\"";
     return 0;

@@ -32,13 +32,25 @@ node* merge (node* h1,node* h2){
     node *pt3,*newhead;
 
     if(h1->data < h2->data){
-    pt3=h1;newhead=h1;h1=h1->next;}
-    else{pt3=h2;newhead=h2;h2=h2->next;}
+      pt3=h1;
+      newhead=h1;
+      h1=h1->next;
+   }
+    else{
+      pt3=h2;
+      newhead=h2;
+      h2=h2->next;
+   }
 
     while(h1!=NULL && h2!=NULL){
         if(h1->data < h2->data){
-        pt3->next=h1;h1=h1->next;}
-        else{pt3->next=h2;h2=h2->next;}
+        pt3->next=h1;
+        h1=h1->next;
+        }
+        else{
+         pt3->next=h2;
+         h2=h2->next;
+      }
         pt3=pt3->next;
     }
 

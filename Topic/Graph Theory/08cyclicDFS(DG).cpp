@@ -19,8 +19,10 @@ bool dfs(ll n,vl adj[],vl &vis,vl &curr_vis){
     vis[n]=1; curr_vis[n]=1;
 
     for (auto it:adj[n])
-    if (!vis[it] && dfs(it,adj,vis,curr_vis)) return true;
-    else if (vis[it] && curr_vis[it]) return true;
+    if (!vis[it]){
+        if(dfs(it,adj,vis,curr_vis)) return true;
+    }
+    else if (curr_vis[it]) return true;
 
     curr_vis[n]=0;
     return false;

@@ -12,6 +12,8 @@ class Node{
     }
 };
 
+// Node node = Node(1,2,3);
+
 bool comp(Node a, Node b){
     return a.wt < b.wt;
 }
